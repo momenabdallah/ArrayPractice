@@ -11,6 +11,10 @@ public class MyClass {
         Scanner scan = new Scanner(System.in);
         String[] empNames = new String[6];
         double[] grades = new double[6];
+        double topResult = grades[0];
+        double minResult = grades[0];
+        String topEmp = empNames[0];
+        String minEmp = empNames[0];
 
         for (int x = 0; x < empNames.length; x++){
             System.out.println("Enter name of empolyee number: " + (x + 1));
@@ -23,11 +27,7 @@ public class MyClass {
         showResults = scan.next();
         if (showResults == "yes"){
             */
-        double topResult = grades[0];
-        double minResult = grades[0];
-        String topEmp = empNames[0];
-        String minEmp = empNames[0];
-
+      
         System.out.println("The result -----------------");
         for (int y = 0; y < empNames.length; y++){
             System.out.println("Name: " + empNames[y] + " got rate " + grades[y]);
